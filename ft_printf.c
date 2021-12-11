@@ -6,7 +6,7 @@
 /*   By: olabrecq <olabrecq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/23 10:32:56 by olabrecq          #+#    #+#             */
-/*   Updated: 2021/07/26 10:30:10 by olabrecq         ###   ########.fr       */
+/*   Updated: 2021/11/24 10:44:37 by olabrecq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,24 @@ int	ft_printf(const char *format, ...)
 		count.index++;
 	}
 	return (count.nb_bytes);
+}
+
+int main()
+{
+	int num = 19;
+	int nb_bytes;
+	int real_nb_bytes;
+	
+	nb_bytes = ft_printf("%c\n", 'd');
+	real_nb_bytes = printf("%c\n", 'd');
+	printf("nb_bytes = %q\n", nb_bytes);
+	printf("real _nb = %d\n", real_nb_bytes);
+	// ft_printf("%p\n", num);
+	// ft_printf("%u\n", num);
+	// ft_printf("%x\n", num);
+	// ft_printf("%X\n", num);
+	// ft_printf("%c\n", num);
+	// ft_printf("%s\n", num);
+
+	
 }
